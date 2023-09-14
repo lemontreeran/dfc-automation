@@ -35,6 +35,6 @@ foreach ($Plan in $Plans) {
       -Location $Region `
       -TemplateFile "./dfc-plan.bicep" `
       # -TemplateParameterObject $TemplateParameterObject `
-      -TemplateParameterFile $ParametersFilePath
+      -TemplateParameterFile $ParametersFilePath `
       -Verbose
 }
