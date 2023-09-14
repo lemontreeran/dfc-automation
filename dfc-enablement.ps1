@@ -3,7 +3,7 @@ param (
     [String]$Region,
 
     [Parameter(Mandatory = $true)]
-    [String]$SubscriptionId,
+    [String]$SubscriptionId
 
     # [Parameter(Mandatory = $true)]
     # [String]$PricingTier
