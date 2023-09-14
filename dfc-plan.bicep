@@ -1,6 +1,8 @@
-@allowed([ 'Standard', 'Free' ])
 param pricingName string
+
+@allowed([ 'Standard', 'Free' ])
 param pricingTier string = 'Standard'
+
 param OnUploadMalwareScanning bool = false
 
 targetScope = 'subscription'

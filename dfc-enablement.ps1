@@ -5,8 +5,8 @@ param (
     [Parameter(Mandatory = $true)]
     [String]$SubscriptionId,
 
-    [Parameter(Mandatory = $true)]
-    [String]$PricingTier
+    # [Parameter(Mandatory = $true)]
+    # [String]$PricingTier
 
     # [Parameter(Mandatory = $true)]
     # [String]$ParametersFilePath
@@ -21,10 +21,10 @@ $Plans = @(
 )
 
 foreach ($Plan in $Plans) {
-    $TemplateParameterObject = @{
-        pricingTier = $PricingTier
-        pricingName = $Plan
-    }
+    # $TemplateParameterObject = @{
+    #     pricingTier = $PricingTier
+    #     pricingName = $Plan
+    # }
 
     $ParametersFileName = $Plan.ToLower()
     $ParametersFilePath = "parameters/$($ParametersFileName).json"
