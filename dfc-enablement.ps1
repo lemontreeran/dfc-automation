@@ -34,7 +34,6 @@ foreach ($Plan in $Plans) {
     New-AzSubscriptionDeployment `
       -Location $Region `
       -TemplateFile "./dfc-plan.bicep" `
-      # -TemplateParameterObject $TemplateParameterObject `
       -TemplateParameterFile $ParametersFilePath `
       -Verbose
 }
