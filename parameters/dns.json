@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "Dns"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

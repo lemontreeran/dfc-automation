@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "OpenSourceRelationalDatabases"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

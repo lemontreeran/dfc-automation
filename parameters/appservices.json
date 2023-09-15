@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "AppServices"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "Arm"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

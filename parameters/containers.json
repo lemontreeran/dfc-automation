@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "Containers"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

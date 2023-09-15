@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "CosmosDbs"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

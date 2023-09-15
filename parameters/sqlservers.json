@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "VirtualMachines"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }

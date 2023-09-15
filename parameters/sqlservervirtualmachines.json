@@ -5,6 +5,9 @@
     "pricingName": {
       "value": "SqlServerVirtualMachines"
     },
+    "subplan": {
+      "value": {}
+    },
     "pricingTier": {
       "value": "Standard"
     }
