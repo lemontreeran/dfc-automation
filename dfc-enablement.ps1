@@ -18,6 +18,16 @@ Set-AzContext -Subscription $SubscriptionId
 
 $Plans = @(
     'StorageAccounts'
+    'VirtualMachines'
+    'SqlServers'
+    'AppServices'
+    'SqlServerVirtualMachines'
+    'KeyVaults'
+    'Dns'
+    'Arm'
+    'OpenSourceRelationalDatabases'
+    'Containers'
+    'CosmosDbs'
 )
 
 foreach ($Plan in $Plans) {
