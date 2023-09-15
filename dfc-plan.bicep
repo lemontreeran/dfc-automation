@@ -4,14 +4,14 @@ param pricingName string
 param pricingTier string = 'Standard'
 
 @description('Suplan Parameters for Storage')
-param StorageSubplan Sting = 'DefenderForStorageV2' 
+param subplan object  
 param OnUploadMalwareScanning bool = false
 
 targetScope = 'subscription'
 
-var subPlan = {
-    StorageAccounts: StorageSubplan
-}
+// var subPlan = {
+//     StorageAccounts: StorageSubplan
+// }
 
 // https://learn.microsoft.com/en-us/rest/api/defenderforcloud/pricings/list?tabs=HTTP
 var extensions = {
