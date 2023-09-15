@@ -8,7 +8,7 @@
     "pricingTier": {
       "value": "Standard"
     },
-    "subplan": {
+    "subPlan": {
       "value": {
         "StorageAccounts": "DefenderForStorageV2"
       }

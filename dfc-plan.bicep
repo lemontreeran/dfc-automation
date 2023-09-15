@@ -4,7 +4,7 @@ param pricingName string
 param pricingTier string = 'Standard'
 
 @description('Suplan Parameters for Storage')
-param subplan object  
+param subPlan object  
 param OnUploadMalwareScanning bool = false
 
 targetScope = 'subscription'
