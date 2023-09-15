@@ -8,6 +8,9 @@
     "pricingTier": {
       "value": "Standard"
     },
+    "StorageSubplan": {
+      "value": "DefenderForStorageV2"
+    },
     "OnUploadMalwareScanning": {
       "value": false
     }
