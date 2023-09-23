@@ -1,4 +1,4 @@
-param SecurityPricingInfo object
+param SecurityPricingInfo array
 
 targetScope = 'subscription'
 
