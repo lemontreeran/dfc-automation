@@ -20,14 +20,13 @@
             "StorageAccounts": [
               {
                 "name": "OnUploadMalwareScanning",
-                "isEnabled": false,
+                "isEnabled": "False",
                 "additionalExtensionProperties": null
               },
               {
                 "name": "SensitiveDataDiscovery",
-                "isEnabled": true
+                "isEnabled": "True"
               }
-
             ]
           }
         }
