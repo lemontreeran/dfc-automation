@@ -13,5 +13,5 @@ var securityPricing = [for (sp, index) in SecurityPricingInfo: {
 
 resource PRICING 'Microsoft.Security/pricings@2023-01-01' = [for (pricing, index) in securityPricing: {
     name: pricing.name
-    properties: pricing[properties]
+    properties: pricing.properties
 }]
