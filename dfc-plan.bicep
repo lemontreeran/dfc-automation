@@ -2,9 +2,7 @@ param SecurityPricingInfo object
 
 targetScope = 'subscription'
 
-param SecurityPricingInfo object
-
-var securityPricing = [for (sp, index) in SecurityPricingInfo {
+var securityPricing = [for (sp, index) in SecurityPricingInfo: {
     name: sp.pricingName
     properties: {
         pricingTier: sp.pricingTier

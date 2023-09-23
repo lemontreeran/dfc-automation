@@ -48,8 +48,6 @@ Set-AzContext -Subscription $SubscriptionId
 #       -Verbose
 # }
 
-Write-Output "Deployment Parameters File Path: $ParametersFilePath"
-
 New-AzSubscriptionDeployment `
   -Location $Region `
   -TemplateFile "./dfc-plan.bicep" `
