@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "SecurityPricingInfo": {
+      "value": [
+        {
+          "pricingName": "AppServices",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "StorageAccounts",
+          "pricingTier": "Standard",
+          "subplan": {
+            "StorageAccounts": "DefenderForStorageV2"
+          },
+          "extensions": {
+            "StorageAccounts": [
+              {
+                "name": "OnUploadMalwareScanning",
+                "isEnabled": false,
+                "additionalExtensionProperties": null
+              },
+              {
+                "name": "SensitiveDataDiscovery",
+                "isEnabled": true
+              }
+
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

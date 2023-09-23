@@ -16,34 +16,42 @@ Set-AzContext -Subscription $SubscriptionId
 
 # Write-Output "Deploying to $SubscriptionId in $Region using $ConfigurationFilePath"
 
-$Plans = @(
-    'StorageAccounts'
-    'VirtualMachines'
-    'SqlServers'
-    'AppServices'
-    'SqlServerVirtualMachines'
-    'KeyVaults'
-    'Dns'
-    'Arm'
-    'OpenSourceRelationalDatabases'
-    'Containers'
-    'CosmosDbs'
-)
+# $Plans = @(
+#     'StorageAccounts'
+#     'VirtualMachines'
+#     'SqlServers'
+#     'AppServices'
+#     'SqlServerVirtualMachines'
+#     'KeyVaults'
+#     'Dns'
+#     'Arm'
+#     'OpenSourceRelationalDatabases'
+#     'Containers'
+#     'CosmosDbs'
+# )
 
-foreach ($Plan in $Plans) {
-    # $TemplateParameterObject = @{
-    #     pricingTier = $PricingTier
-    #     pricingName = $Plan
-    # }
+# foreach ($Plan in $Plans) {
+#     # $TemplateParameterObject = @{
+#     #     pricingTier = $PricingTier
+#     #     pricingName = $Plan
+#     # }
 
-    $ParametersFileName = $Plan.ToLower()
-    $ParametersFilePath = "parameters/$($ParametersFileName).json"
+#     $ParametersFileName = $Plan.ToLower()
+#     $ParametersFilePath = "parameters/$($ParametersFileName).json"
 
-    Write-Output "Deployment Parameters File Path: $ParametersFilePath"
+#     Write-Output "Deployment Parameters File Path: $ParametersFilePath"
 
-    New-AzSubscriptionDeployment `
-      -Location $Region `
-      -TemplateFile "./dfc-plan.bicep" `
-      -TemplateParameterFile $ParametersFilePath `
-      -Verbose
-}
+#     New-AzSubscriptionDeployment `
+#       -Location $Region `
+#       -TemplateFile "./dfc-plan.bicep" `
+#       -TemplateParameterFile $ParametersFilePath `
+#       -Verbose
+# }
+
+Write-Output "Deployment Parameters File Path: $ParametersFilePath"
+
+New-AzSubscriptionDeployment `
+  -Location $Region `
+  -TemplateFile "./dfc-plan.bicep" `
+  -TemplateParameterFile "./parameters.json" `
+  -Verbose
