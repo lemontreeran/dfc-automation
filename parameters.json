@@ -5,12 +5,6 @@
     "SecurityPricingInfo": {
       "value": [
         {
-          "pricingName": "AppServices",
-          "pricingTier": "Standard",
-          "subplan": {},
-          "extensions": {}
-        },
-        {
           "pricingName": "StorageAccounts",
           "pricingTier": "Standard",
           "subplan": {
@@ -29,6 +23,75 @@
               }
             ]
           }
+        },
+        {
+          "pricingName": "VirtualMachines",
+          "pricingTier": "Standard",
+          "subplan": {
+            "StorageAccounts": "P2"
+          },
+          "extensions": {}
+        },
+        {
+          "pricingName": "SqlServers",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "AppServices",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "SqlServerVirtualMachines",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "KeyVaults",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "Dns",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "Arm",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "OpenSourceRelationalDatabases",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
+        },
+        {
+          "pricingName": "Containers",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {
+            "Containers": [
+              {
+                "name": "ContainerRegistriesVulnerabilityAssessments",
+                "isEnabled": "True"
+              }
+            ]
+          }
+        },
+        {
+          "pricingName": "CosmosDbs",
+          "pricingTier": "Standard",
+          "subplan": {},
+          "extensions": {}
         }
       ]
     }
