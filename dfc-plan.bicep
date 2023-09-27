@@ -11,6 +11,7 @@ var securityPricing = [for (sp, index) in SecurityPricingInfo: {
     }
 }]
 
+@batchSize(1)
 resource PRICING 'Microsoft.Security/pricings@2023-01-01' = [for (pricing, index) in securityPricing: {
     name: pricing.name
     properties: pricing.properties
