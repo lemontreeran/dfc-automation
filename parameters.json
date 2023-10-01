@@ -22,7 +22,11 @@
                 "isEnabled": "True"
               }
             ]
-          }
+          },
+          "exclusions": {
+              "subscriptions": ["24e9ed1b-e731-4671-a62a-5f98f5c4af16"],
+              "resources": []
+            }
         },
         {
           "pricingName": "VirtualMachines",
