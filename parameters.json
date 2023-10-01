@@ -26,7 +26,7 @@
           "exclusions": {
               "subscriptions": ["24e9ed1b-e731-4671-a62a-5f98f5c4af16"],
               "resources": []
-            }
+          }
         },
         {
           "pricingName": "VirtualMachines",
@@ -34,49 +34,81 @@
           "subplan": {
             "StorageAccounts": "P2"
           },
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "SqlServers",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "AppServices",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "SqlServerVirtualMachines",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "KeyVaults",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "Dns",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "Arm",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "OpenSourceRelationalDatabases",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         },
         {
           "pricingName": "Containers",
@@ -89,13 +121,21 @@
                 "isEnabled": "True"
               }
             ]
+          },
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
           }
         },
         {
           "pricingName": "CosmosDbs",
           "pricingTier": "Standard",
           "subplan": {},
-          "extensions": {}
+          "extensions": {},
+          "exclusions": {
+              "subscriptions": [],
+              "resources": []
+          }
         }
       ]
     }
